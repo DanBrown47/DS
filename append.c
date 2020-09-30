@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 
 void main()
 {
@@ -9,7 +10,7 @@ void main()
 	printf("Enter Array 1 Elements : ");
 	for(i=0; i<size1; i++)
 	{
-		scanf("%d",&arr1[i]);
+		scanf("%d",&arr1[i] );
 	}
 	printf("Enter Array 2 Size : ");
 	scanf("%d",&size2);
@@ -20,7 +21,7 @@ void main()
 	}
 	for(i=0; i<size1; i++)
 	{
-		merge[i]=arr1[i];
+		merge[i]=arr1[i]; //Stuff happens here
 	}
 	size=size1+size2;
 	for(i=0, k=size1; k<size && i<size2; i++, k++)
